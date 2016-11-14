@@ -6,6 +6,8 @@ How to connect to Kerio VPN from Ubuntu
 
 Download VPN client from VPN tab at http://www.kerio.com/support/kerio-control.
 
+Note: download will be done over `http://`, there is no `https://` option. There is no checksum to verify downloaded file. _Private_ in _Virtual Private Network_ ends here.
+
 Installation via Ubuntu Software (`/usr/bin/gnome-software`) does not work,
 presumable because of configuration step, as there was stuck debconf frontend
 and `kerio-control-vpnclient.config` program.
