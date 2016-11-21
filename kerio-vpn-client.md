@@ -21,6 +21,15 @@ works just fine and runs configuration during installation.
 
 To change connection use `dpkg-reconfigure kerio-control-vpnclient`. It would allow to change only one connection, but based on content of configuration file, it could be assumed that multiple connections could be configured. Use `sudo cat /etc/kerio-kvc.conf` to see raw configuration file.
 
+## Usage
+
+Kerio VPN Client is very sticky, once installed it is constantly on. Following commands will prevent it's startup on every boot and would require manual start.
+
+```
+sudo update-rc.d kerio-kvc disable 5
+sudo service kerio-kvc stop
+```
+
 ## Troubleshooting
 
 See [common recipes][common-receipes] for troubleshooting VPN client connection issues.
